@@ -1,2 +1,2 @@
 # CreatorConsole
-CreatorConsole is a IN-GAME console for creator, you can debug here.
+CreatorConsole is a IN-GAME console for creator, :blush:.
