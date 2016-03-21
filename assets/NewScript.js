@@ -15,13 +15,9 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-        cc.log('testasdfasfasfdasfdasfasdf');
-        cc.log('testasdfasfasfdasfdasfasdf');
-        cc.log('testasdfasfasfdasfdasfasdf');
-        cc.log('testasdfasfasfdasfdasfasdf');
-        cc.log('testasdfasfasfdasfdasfasdf');cc.log('testasdfasfasfdasfdasfasdf');
-        cc.log('testasdfasfasfdasfdasfasdf');
-        cc.log('哈哈');
+        cc.log('hello world');
+        cc.warn('fuck you');
+        cc.error('haha');
     },
 
     // called every frame, uncomment this function to activate update callback
