@@ -5,6 +5,9 @@ cc.Class({
         content: {
             default: null,
             type: cc.Label,
+            notify: function () {
+                // clean content when overflow.
+            },
         },
         dragBar: {
             default: null,
@@ -21,7 +24,7 @@ cc.Class({
     },
 
     onLoad: function () {
-        /*
+        
         var self = this;
         
         cc.log = function (str) {
@@ -36,11 +39,11 @@ cc.Class({
             self.content.string += 'error: ' + str + '\n';
         };
         
-        cc.sys = function (str) {
+        cc.syslog = function (str) {
             self.content.string += str + '\n';
         };
         
-        /*
+        
         self.content.node.on('touchmove', function ( touch) {
             var y = touch.getPreviousLocation().y - touch.getLocationY();
             
@@ -62,28 +65,28 @@ cc.Class({
             this.parent.height += lastPos.y - touch.getLocationY();
             self.content.node.width = this.parent.width - this.width;
         });
-        */
+        
     },
     
     commandSubmit: function () {
-        /*
+        
         var content = this.cmdEditBox.string;
         
         if (content === '')
             return;
             
-        cc.sys('cmd: ' + content);
+        cc.syslog('cmd: ' + content);
         var cmds = this.cmdEditBox.string.split(' ');
         
         var fun = this[cmds[0]];
         if (!fun) {
-            cc.sys('Invalid command !');
+            cc.syslog('Invalid command !');
         }
         else{
             fun(this, cmds);
         }
         this.cmdEditBox.string = '';
-        */
+        
     },
     
     // Command

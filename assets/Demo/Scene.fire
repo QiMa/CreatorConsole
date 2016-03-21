@@ -843,9 +843,6 @@
       "__id__": 2
     },
     "_enabled": true,
-    "content": {
-      "__id__": 23
-    },
     "dragBar": {
       "__id__": 13
     },
@@ -854,6 +851,9 @@
     },
     "cmdEditBox": {
       "__id__": 9
+    },
+    "_N$content": {
+      "__id__": 23
     }
   },
   {
